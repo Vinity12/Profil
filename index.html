@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Saya & Informasi Jurusan</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-utama">
+
+  <!-- Header (Navbar) -->
+  <nav id="navbar-utama" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#"><i class="bi bi-code-slash text-primary"></i> Profil RPL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tentang">Tentang Saya</a></li>
+          <li class="nav-item"><a class="nav-link" href="#jurusan">Jurusan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#denah">Denah</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Beranda (Hero) -->
+  <section id="beranda" class="hero-section">
+    <div class="container text-center text-md-start">
+      <div class="row align-items-center flex-column-reverse flex-md-row">
+        <div class="col-md-7 my-3">
+          <h1 class="display-4 fw-bold mb-2">Halo, Saya Siswa RPL</h1>
+          <p class="lead mb-4">Siswa Rekayasa Perangkat Lunak yang berfokus pada pengembangan aplikasi web modern dan responsif.</p>
+          <a href="#tentang" class="btn btn-light btn-lg text-primary fw-semibold me-2"><i class="bi bi-person-fill"></i> Tentang Saya</a>
+        </div>
+        <div class="col-md-5 text-center my-3">
+          <img src="assets/images/profile.jpg" class="rounded-circle img-thumbnail shadow-lg" alt="Foto Profil">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang Saya -->
+  <section id="tentang">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold"><i class="bi bi-person-badge text-primary"></i> Tentang Saya</h2>
+        <p class="text-muted">Data diri dan tingkat keahlian teknis</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h4 class="card-title fw-bold mb-3">Data Diri</h4>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Nama:</strong> Ashraf Rizky Ramadhan</li>
+                <li class="list-group-item"><strong>Kelas:</strong> XI RPL 4</li>
+                <li class="list-group-item"><strong>NIS:</strong> 0187382818</li>
+                <li class="list-group-item"><strong>Alamat:</strong> Tanjung Selamat, Medan, Sumatera Utara</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h4 class="card-title fw-bold mb-3">Keahlian</h4>
+              
+              <div class="mb-3">
+                <div class="d-flex justify-content-between"><span>HTML / CSS</span><span>90%</span></div>
+                <div class="progress" role="progressbar"><div class="progress-bar bg-primary" style="width: 90%"></div></div>
+              </div>
+
+              <div class="mb-3">
+                <div class="d-flex justify-content-between"><span>JavaScript</span><span>78%</span></div>
+                <div class="progress" role="progressbar"><div class="progress-bar bg-success" style="width: 78%"></div></div>
+              </div>
+
+              <div class="mb-3">
+                <div class="d-flex justify-content-between"><span>Java</span><span>42%</span></div>
+                <div class="progress" role="progressbar"><div class="progress-bar bg-warning" style="width: 42%"></div></div>
+              </div>
+
+              <div class="mb-3">
+                <div class="d-flex justify-content-between"><span>GitHub</span><span>60%</span></div>
+                <div class="progress" role="progressbar"><div class="progress-bar bg-danger" style="width: 60%"></div></div>
+              </div>
+
+              <div class="mb-3">
+                <div class="d-flex justify-content-between"><span>PHP</span><span>30%</span></div>
+                <div class="progress" role="progressbar"><div class="progress-bar bg-info" style="width: 30%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jurusan (Nav Pills) -->
+  <section id="jurusan">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold"><i class="bi bi-building text-primary"></i>Jurusan</h2>
+        <p class="text-muted">Visi dan Misi enam kompetensi keahlian</p>
+      </div>
+
+      <!-- Tab Buttons -->
+      <ul class="nav nav-pills justify-content-center mb-4" id="jurusan-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="tab-rpl" data-bs-toggle="pill" data-bs-target="#pills-rpl" type="button" role="tab" aria-controls="pills-rpl" aria-selected="true">RPL</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab-dkv" data-bs-toggle="pill" data-bs-target="#pills-dkv" type="button" role="tab" aria-controls="pills-dkv" aria-selected="false">DKV</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab-peksos" data-bs-toggle="pill" data-bs-target="#pills-peksos" type="button" role="tab" aria-controls="pills-peksos" aria-selected="false">PEKSOS</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab-tkj" data-bs-toggle="pill" data-bs-target="#pills-tkj" type="button" role="tab" aria-controls="pills-tkj" aria-selected="false">TKJ</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab-animasi" data-bs-toggle="pill" data-bs-target="#pills-animasi" type="button" role="tab" aria-controls="pills-animasi" aria-selected="false">ANIMASI</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab-pspt" data-bs-toggle="pill" data-bs-target="#pills-pspt" type="button" role="tab" aria-controls="pills-pspt" aria-selected="false">PSPT</button>
+        </li>
+      </ul>
+
+      <!-- Tab Content -->
+      <div class="tab-content" id="jurusan-tabContent">
+        <!-- RPL -->
+        <div class="tab-pane fade show active" id="pills-rpl" role="tabpanel" aria-labelledby="tab-rpl">
+          <div class="card p-4 border-0 shadow-sm">
+            <div class="row align-items-center">
+              <div class="col-md-3 text-center mb-3 mb-md-0">
+                <img src="assets/images/rpl.jpg" class="img-fluid logo-jurusan" alt="Logo RPL">
+              </div>
+              <div class="col-md-9">
+                <h3 class="fw-bold text-primary">Rekayasa Perangkat Lunak (RPL)</h3>
+                <p><strong>Visi:</strong> Menjadi pusat keunggulan pendidikan kejuruan bidang rekayasa perangkat lunak yang menghasilkan pengembang perangkat lunak kompeten dan kreatif.</p>
+                <p class="mb-0"><strong>Misi:</strong> Menyelenggarakan pembelajaran berbasis proyek, menguasai pemrograman web dan mobile, serta menanamkan etika profesi IT.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DKV -->
+        <div class="tab-pane fade" id="pills-dkv" role="tabpanel" aria-labelledby="tab-dkv">
+          <div class="card p-4 border-0 shadow-sm">
+            <div class="row align-items-center">
+              <div class="col-md-3 text-center mb-3 mb-md-0">
+                <img src="assets/images/dkv.jpg" class="img-fluid logo-jurusan" alt="Logo DKV">
+              </div>
+              <div class="col-md-9">
+                <h3 class="fw-bold text-primary">Desain Komunikasi Visual (DKV)</h3>
+                <p><strong>Visi:</strong> Menjadi program keahlian yang mencetak desainer visual kreatif untuk industri kreatif.</p>
+                <p class="mb-0"><strong>Misi:</strong> Mengembangkan kemampuan desain grafis, ilustrasi, videografi, dan media interaktif sesuai standar industri.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PEKSOS -->
+        <div class="tab-pane fade" id="pills-peksos" role="tabpanel" aria-labelledby="tab-peksos">
+          <div class="card p-4 border-0 shadow-sm">
+            <div class="row align-items-center">
+              <div class="col-md-3 text-center mb-3 mb-md-0">
+                <img src="assets/images/peksos.jpg" class="img-fluid logo-jurusan" alt="Logo PEKSOS">
+              </div>
+              <div class="col-md-9">
+                <h3 class="fw-bold text-primary">Pekerjaan Sosial (PEKSOS)</h3>
+                <p><strong>Visi:</strong> Mewujudkan tenaga sosial profesional yang peduli, berempati, dan berkontribusi nyata pada masyarakat.</p>
+                <p class="mb-0"><strong>Misi:</strong> Membekali siswa dengan kompetensi pelayanan sosial, pendampingan masyarakat, dan penanganan masalah sosial.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TKJ -->
+        <div class="tab-pane fade" id="pills-tkj" role="tabpanel" aria-labelledby="tab-tkj">
+          <div class="card p-4 border-0 shadow-sm">
+            <div class="row align-items-center">
+              <div class="col-md-3 text-center mb-3 mb-md-0">
+                <img src="assets/images/tkj.jpg" class="img-fluid logo-jurusan" alt="Logo TKJ">
+              </div>
+              <div class="col-md-9">
+                <h3 class="fw-bold text-primary">Teknik Komputer & Jaringan (TKJ)</h3>
+                <p><strong>Visi:</strong> Mencetak teknisi dan administrator jaringan yang handal serta siap kerja di era digital.</p>
+                <p class="mb-0"><strong>Misi:</strong> Melatih perakitan komputer, instalasi jaringan kabel/nirkabel, konfigurasi server, dan keamanan jaringan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ANIMASI -->
+        <div class="tab-pane fade" id="pills-animasi" role="tabpanel" aria-labelledby="tab-animasi">
+          <div class="card p-4 border-0 shadow-sm">
+            <div class="row align-items-center">
+              <div class="col-md-3 text-center mb-3 mb-md-0">
+                <img src="assets/images/animasi.jpg" class="img-fluid logo-jurusan" alt="Logo Animasi">
+              </div>
+              <div class="col-md-9">
+                <h3 class="fw-bold text-primary">Animasi</h3>
+                <p><strong>Visi:</strong> Menghasilkan animator kreatif dan produktif yang mampu bersaing di industri perfilman dan game.</p>
+                <p class="mb-0"><strong>Misi:</strong> Mengajarkan teknik pembuatan animasi 2D dan 3D, pemodelan karakter, serta efek visual digital.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PSPT -->
+        <div class="tab-pane fade" id="pills-pspt" role="tabpanel" aria-labelledby="tab-pspt">
+          <div class="card p-4 border-0 shadow-sm">
+            <div class="row align-items-center">
+              <div class="col-md-3 text-center mb-3 mb-md-0">
+                <img src="assets/images/pspt.jpg" class="img-fluid logo-jurusan" alt="Logo PSPT">
+              </div>
+              <div class="col-md-9">
+                <h3 class="fw-bold text-primary">Produksi & Siaran Program Televisi (PSPT)</h3>
+                <p><strong>Visi:</strong> Mencetak insan pertelevisian profesional, kompeten, dan beretika dalam bidang penyiaran.</p>
+                <p class="mb-0"><strong>Misi:</strong> Mengembangkan keahlian manajemen produksi acara TV, penyutradaraan, sinematografi, dan editing video.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Denah -->
+  <section id="denah">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold"><i class="bi bi-map-fill text-primary"></i> Denah Rumah ke Sekolah</h2>
+        <p class="text-muted">Peta lokasi sekolah dan akses petunjuk rute</p>
+      </div>
+
+      <div class="card border-0 shadow-sm p-3">
+        <div class="ratio ratio-16x9 mb-3">
+          <iframe src="https://maps.google.com/maps?q=Jl.%20Patriot%20No.%2020,%20Sunggal&t=&z=15&ie=UTF8&iwloc=&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="text-center">
+          <a href="https://maps.app.goo.gl/FEWhctfNacgJJXVR8?g_st=aw">
+            <i class="bi bi-geo-alt-fill"></i> Buka Rute Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer / Kontak -->
+  <footer id="kontak" class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold"><i class="bi bi-code-slash text-primary"></i> Website Profil RPL</h5>
+          <p class="text-secondary">Website portofolio siswa RPL untuk memperkenalkan identitas diri dan informasi jurusan sekolah.</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold">Menu Cepat</h5>
+          <ul class="list-unstyled">
+            <li><a href="#beranda" class="text-decoration-none text-secondary">Beranda</a></li>
+            <li><a href="#tentang" class="text-decoration-none text-secondary">Tentang Saya</a></li>
+            <li><a href="#jurusan" class="text-decoration-none text-secondary">Jurusan</a></li>
+            <li><a href="#denah" class="text-decoration-none text-secondary">Denah</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold">Hubungi Saya</h5>
+          <p class="text-secondary mb-1"><i class="bi bi-envelope-fill me-2"></i> ashmy@gmail.com</p>
+          <p class="text-secondary mb-1"><i class="bi bi-geo-alt-fill me-2"></i> Jl. Flamboyan Raya, Tanjung Selamat, Medan</p>
+          <a class="text-secondary"><i class="bi bi-github me-2"></i> github.com/vinity12</a>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <div class="text-center text-secondary">
+        <small>&copy; 2026 Website Profil RPL</small>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
